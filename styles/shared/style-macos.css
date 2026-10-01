@@ -61,6 +61,10 @@
     flex: none;
 }
 
+.feature-stack .feature-text h3:first-child {
+    margin-top: 0;
+}
+
 .feature-stack .window-shot {
     width: 100%;
     margin-bottom: 1rem;
