@@ -1,0 +1,10 @@
+/* 
+ * Theme Selector
+ * 
+ * To change the theme across all pages, simply change the @import below:
+ * - For light theme: @import url('shared/themes/caramel.css');
+ * - For dark theme:  @import url('shared/themes/cocoa.css');
+ */
+
+@import url('shared/themes/slate.css');
+@import url('shared/themes/ink.css') screen and (prefers-color-scheme: dark);
