@@ -183,8 +183,14 @@ li {
     width: 100%;
     height: auto;
     border-radius: 34px;
+    transition: transform 0.5s ease;
     border: 1px solid var(--screenshot-border);
     box-shadow: var(--screenshot-shadow);
+}
+
+.app-screenshot.dark {
+    --bezel-color: #333333;
+    border-color: #000000;
 }
 
 /* --- 6. Feature Blocks --- */
@@ -242,11 +248,9 @@ li {
 .trust-statement .container-small {
     max-width: 700px;
     margin: 0 auto;
-    padding: 2rem 2rem; 
+    padding: 2rem 2rem;
 }
 
-/* Your essential divider line for privacy.html */
-/* We only draw it if it's NOT the .last-section */
 .trust-statement:not(.last-section)::after {
     content: "";
     position: absolute;
@@ -299,19 +303,24 @@ section.download-cta {
 }
 
 .download-cta-box {
-    text-align: center; 
+    text-align: center;
     background-color: var(--cta-bg);
     border-radius: 12px;
     box-shadow: var(--cta-shadow);
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 1.5rem 2.5rem;
     border: 1px solid var(--cta-border);
+}
+
+.download-text {
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
 }
 
 .download-cta-badge {
     height: 60px;
     width: auto;
-    display: block; 
+    display: block;
     margin: auto;
     transition: transform 0.2s;
 }
@@ -326,7 +335,7 @@ section.download-cta {
     transition: transform 0.2s;
 }
 
-.download-cta-badge:hover, 
+.download-cta-badge:hover,
 .final-cta .download-cta-badge:hover {
     transform: scale(1.05);
 }
@@ -508,16 +517,16 @@ footer {
     .screenshot-wrapper.secondary { display: none; }
     .feature-split, .feature-split.reverse { flex-direction: column; gap: 2rem; }
     .feature-image { position: static; justify-content: center; }
-    
+
     .footer-content {
         justify-content: flex-start;
     }
-    
+
     .footer-links {
         gap: 2rem;
         order: 2;
     }
-    
+
     .language-selector {
         position: static;
         order: 1;
